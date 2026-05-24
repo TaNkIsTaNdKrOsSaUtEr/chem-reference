@@ -53,9 +53,15 @@ jobs:
           cp index.html manifest.json sw.js www/
           cp -r css js icons www/ 2>/dev/null || true
 
-      - name: Add Android platform
-        run: npx cap add android
-
+      - name: Setup Android platform
+        run: |
+          if [ ! -d "android" ]; then
+            npx cap add android
+          else
+            echo "Android platform already exists, skipping add"
+          fi
+          npx cap sync android
+          
       - name: Sync Capacitor
         run: npx cap sync android
 
