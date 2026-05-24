@@ -1,0 +1,10 @@
+{
+  "appId": "com.chem.ref",
+  "appName": "ХимСправ",
+  "webDir": "www",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "android": {
+    "allowMixedContent": true
+  }
+}

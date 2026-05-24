@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Химический справочник</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#2c3e50">
+  <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+</head>
+<body>
+  <header>
+    <h1>Справочник структурных формул</h1>
+    <p class="subtitle">Введите брутто-формулу (например, C6H6)</p>
+  </header>
+
+  <main>
+    <div class="search-box">
+      <input type="text" id="formulaInput" placeholder="" autocomplete="off" spellcheck="false">
+      <button id="searchBtn">Поиск</button>
+    </div>
+
+    <div id="status" class="status"></div>
+    <div id="results" class="results"></div>
+    <div id="drawArea" class="draw-area"></div>
+  </main>
+
+  <footer>
+    <button id="clearCacheBtn" class="secondary">Очистить кэш формул</button>
+    <span id="cacheSize"></span>
+  </footer>
+
+  <!-- Локальные библиотеки -->
+  <script src="js/idb.min.js"></script>
+  <script src="js/smiles-drawer.min.js"></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>

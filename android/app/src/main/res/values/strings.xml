@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">ХимСправ</string>
+    <string name="title_activity_main">ХимСправ</string>
+    <string name="package_name">com.chem.ref</string>
+    <string name="custom_url_scheme">com.chem.ref</string>
+</resources>

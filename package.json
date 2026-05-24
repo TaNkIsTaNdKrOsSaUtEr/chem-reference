@@ -1,0 +1,21 @@
+{
+  "name": "chem-reference-pwa",
+  "version": "1.0.0",
+  "description": "Химический справочник с умным кэшем",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 3000",
+    "cap:sync": "npx cap sync android",
+    "cap:open": "npx cap open android"
+  },
+  "keywords": ["chemistry", "pwa", "cache", "pubchem"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@capacitor/android": "^6.0.0",
+    "@capacitor/core": "^6.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^6.0.0"
+  }
+}
