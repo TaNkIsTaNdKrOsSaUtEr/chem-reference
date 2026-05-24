@@ -23,7 +23,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          npm ci
+          npm install
           npm install @capacitor/core @capacitor/cli @capacitor/android
 
       - name: Configure Capacitor
